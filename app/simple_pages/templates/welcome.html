@@ -1,0 +1,662 @@
+{% extends "base.html" %}
+{% block content %}
+    <div class="row">
+        <article class="col-8 lh-lg fs-5">
+            <div class=" bluish row">
+                <h1>Python/Flask</h1>
+            </div>
+
+            <div class="container px-4 px-lg-5">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-md-10 col-lg-8 col-xl-10">
+                        <!-- Post preview-->
+                        <div class="post-preview">
+                            <h2 class="post-title"><strong>What is Python?</strong></h2>
+                            </p>
+                            <p>The database management system not only aids in the effective storage of data, but also
+                                in the
+                                sharing of
+                                data throughout the business. Programmers, system administrators, and end-users are all
+                                involved
+                                in such an
+                                environment. There are five components in a database environment: data, hardware,
+                                software,
+                                people, and
+                                procedures. Multiple users can easily access the data and share it with other users
+                                without
+                                having to go
+                                through any additional steps. In only a few seconds, the system can assist you find the
+                                information you need
+                                from a big database. As a result, managing various sorts of data, such as student
+                                records,
+                                employee
+                                information, inventory, payroll, project management, and so on, is extremely effective
+                                for
+                                organizations.
+                            </p>
+                            <p></p>
+                            <p></p>
+                            <p><strong>What is pytest?</strong>
+                            </p>
+                            <p></p>
+                            <p>PyTest is a testing framework that allows users to write test codes using Python
+                                programming
+                                language. It
+                                helps you to write simple and scalable test cases for databases, APIs, or UI. PyTest is
+                                mainly
+                                used for
+                                writing tests for APIs. It helps to write tests from simple unit tests to complex
+                                functional
+                                tests.
+                            </p>
+                            <p>Pytest assertions are checks that return either True or False status. In Python Pytest,
+                                if an
+                                assertion fails
+                                in a test method, then that method execution is stopped there. The remaining code in
+                                that test
+                                method is not
+                                executed, and Pytest assertions will continue with the next test method.
+                            </p>
+                            <p> In the code for this Project the pytest has been performed for each webpage by asserting
+                                a value
+                                from each.
+                                Intitally the pytest failed due to snake case style, the pytest checks if all the
+                                variable names
+                                are
+                                starting with lowercase and the words are seperated only by the underscore. After fixing
+                                the
+                                issue the
+                                pytest was Successful.
+                            </p>
+                            <p></p>
+                            <p></p>
+                        </div>
+                        <!-- Divider-->
+                        <hr class="my-4"/>
+                        <!-- Post preview-->
+                        <div class="post-preview">
+                            <h2 class="post-title"><strong>Python Flask</strong></h2>
+                            <p></p>
+                            <p>Flask is a backend framework that is used to build web applications. A framework is a
+                                foundation
+                                for
+                                developing applications and it contains several in-built modules and libraries which
+                                makes the
+                                process
+                                easier for developers. It provides a structure for developers to follow while creating a
+                                web
+                                app.
+                            </p>
+                            <p>Back end engineers, full stack engineers, Python developers, software engineers, and
+                                DevOps
+                                engineers are
+                                some of the web development positions that require Python.
+                            </p>
+                            <p> it’s basically a reusable code that provides specific functionality that can be used in
+                                your
+                                programs. In
+                                short, a framework is a collection of libraries and modules that help you develop faster
+                                and
+                                smarter
+                                applications. Apart from Flask, there are several other software frameworks developed
+                                for
+                                various
+                                functions.</p>
+                            <p> Here is the <a href="https://github.com/sagar-alande/docker-nginx">Git</a> link to the
+                                project i
+                                have worked
+                                on with flask. </p>
+                            <p></p>
+                            <p></p>
+                        </div>
+                        <!-- Divider-->
+                        <hr class="my-4"/>
+                        <!-- Post preview-->
+                        <div class="post-preview">
+                            <h2 class="post-title"><strong>Setting up Pytest on Flask</strong></h2>
+                            <p>With the command <strong>pip install pytest</strong> you can install Pytest. Once the
+                                installation is
+                                done,<strong> import pytest</strong> helps to import modules from the pytest.
+                            </p>
+                            <p><strong>Naming convention for files:</strong> keep your tests in a <strong>tests</strong>
+                                directory in the
+                                root folder of the application. Pytest recommends that test file names begin with the
+                                format
+                                <strong>test_*.py</strong>
+                                or end with format <strong>**_test.py</strong>, Using these formats enables Pytest to
+                                auto-discover the test
+                                files easily and also minimizes confusion when running tests.
+                            </p>
+                            <p>In this project I have included the tests to make sure that I receive atleast one
+                                combination of
+                                words
+                                provided in the assertion.</p>
+                            <p><strong>testing with pytest</strong> To run Pytest tests, you can either use py.test or
+                                pytest in
+                                the
+                                terminal. You can also run a single file by explicitly specifying the filename after the
+                                Pytest
+                                command:
+                                pytest (your filename).py. When these commands are executed, Pytest automatically finds
+                                all the
+                                tests in
+                                either the root directory, or in the specified single file.
+
+                                When no test files have been explicitly defined, Pytest executes any tests in the root
+                                directory
+                                that follow
+                                the standard naming pattern, without you needing to specify filenames or directories.
+                            </p>
+                            <p>Pytest marks a passed test with a green dot .; it marks a failed test with a red F. Count
+                                the
+                                number of dots
+                                or Fs to figure out how many tests passed and failed, and in what execution order.
+                            </p>
+                            <p></p>
+                            <p></p>
+                        </div>
+                        <!-- Divider-->
+                        <hr class="my-4"/>
+                        <!-- Pager-->
+                        <!-- Post preview-->
+                        <div class="post-preview">
+                            <h2 class="post-title"><strong>project outline</strong></h2>
+                            <ul>
+                                <li>docker_flask-- project root folder</li>
+                                <ul>
+                                    <li>.github-- workflows for development and production</li>
+                                    <ul>
+                                        <li>dev.yml-- development workflow</li>
+                                        <li> prod.yml-- configuration file for production / production workflow</li>
+                                    </ul>
+                                    <ul>
+                                        <li>app--application layout for python project</li>
+                                        <ul>
+                                            <li>Static</li>
+                                            <ul>
+                                                <li>css -- formatting file</li>
+                                                <li> images-- this folder has all images used for this project</li>
+                                                <li> js-- JavaScript executes in the client and enables dynamic content
+                                                    and
+                                                    interaction that
+                                                    is not possible with HTML and CSS alone. Every modern Python web
+                                                    application
+                                                    uses
+                                                    JavaScript on the front end.
+                                                </li>
+                                            </ul>
+                                            <li>templates-- has all the HTML pages required for the project</li>
+                                            <li>_init_.py-- project initialization script invokes the base HTML script
+                                            </li>
+                                        </ul>
+                                        <li>tests -- has all the pytest files for each page in the project</li>
+
+                                        <li>docker-compose.yml-- Orchestration file that contains the configuration to
+                                            develop
+                                            locally, it overrides the Dockerfile to run the flask development server
+                                            instead of
+                                            running the gunicorn server that is used for hosting on Heroku
+                                        </li>
+                                        <li>Dockerfile -- File used to create an image to run in a container that runs
+                                            the
+                                            program
+                                        </li>
+                                        <li>readme.md-- shows the production and deployment status along with the links
+                                            to
+                                            heroku applications
+                                        </li>
+                                    </ul>
+                                </ul>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class=" bluish row">
+                <h1>Git Hub</h1>
+            </div>
+            <div class="container px-4 px-lg-5">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-md-10 col-lg-8 col-xl-10">
+                        <!-- Post preview-->
+                        <div class="post-preview">
+                            <h2 class="post-title"><strong>Introduction</strong></h2>
+                            <p>GitHub is a version management and collaboration tool for programming. It allows you and
+                                others
+                                to
+                                collaborate on projects from any location.
+                            </p>
+                            <p>Here we will discuss about
+                            </p>
+                            <p>
+                                • Repositories
+                            </p>
+                            <p> • Branches
+                            </p>
+                            <p> • Commit
+                            </p>
+                            <p> • Merging of requests
+                            </p>
+                            <p> • Tags
+                            </p>
+                            <p></p>
+                        </div>
+                        <!-- Divider-->
+                        <hr class="my-4"/>
+                        <!-- Post preview-->
+                        <div class="post-preview">
+                            <h2 class="post-title"><strong>Repository</strong></h2>
+                            <p>
+                                Typically, a repository is used to organize a single project. Repositories can hold
+                                anything
+                                your project
+                                need, including folders and files, photos, videos, spreadsheets, and data sets. A README
+                                file,
+                                which
+                                contains information about your project, is frequently included in repositories. The
+                                Markdown
+                                language is
+                                used to write README files. This <a href="https://www.markdownguide.org/cheat-sheet/">cheat
+                                sheet </a> will
+                                help you get started with Markdown syntax. When you create
+                                a new repository on GitHub, you can add a README file at the same time. Other common
+                                options,
+                                such as a
+                                license file, are available on GitHub.
+                            </p>
+                            <p></p>
+                            <p> Creating Repository</p>
+                            <p>1.After logging in, in the upper-right corner of any page, use the + drop-down menu, and
+                                select
+                                New
+                                repository.</p>
+                            <p>2.In the Repository name box, enter your desired repo name, Adding description is
+                                optional</p>
+                            <p>3.Select whether your repository will be <strong>Public or Private</strong>.</p>
+                            <p>4.Click Create repository.</p>
+                            <p></p>
+                        </div>
+                        <!-- Divider-->
+                        <hr class="my-4"/>
+
+                        <!-- Post preview-->
+                        <div class="post-preview">
+                            <h2 class="post-title"><strong>Branch</strong></h2>
+                            <p>A branch is a version of a repository that exists in two places at the same time. It is
+                                contained
+                                within the
+                                repository, but it has no effect on the primary or main branch, allowing you to operate
+                                freely
+                                without
+                                causing any disruption to the "live" version. You can merge your branch back into the
+                                main
+                                branch to publish
+                                your modifications once you've finished making the changes you desire.</p>
+                            <p>
+                                Branches allow you to develop features, fix bugs, or safely experiment with new ideas in
+                                a
+                                contained area of
+                                your repository.
+                            </p>
+                            <p>
+                                You always create a branch from an existing branch. Typically, you might create a new
+                                branch
+                                from the
+                                default branch of your repository. You can then work on this new branch in isolation
+                                from
+                                changes that other
+                                people are making to the repository. A branch you create to build a feature is commonly
+                                referred
+                                to as a
+                                feature branch or topic branch
+                            </p>
+                            <p> When we create any new repository in GitHub, the GitHub creates the repository with a
+                                single
+                                branch. This
+                                branch is default branch for repository, and it's the branch that will be shown to
+                                anyone
+                                visiting your
+                                GitHub Profile. When you try to clone the repository code, the default branch will be
+                                cloned
+                                unless you have
+                                selected specific branch to code. </p>
+                            <p>
+                            </p>
+                            <p>
+                        </div>
+                        <!-- Divider-->
+                        <hr class="my-4"/>
+                        <!-- Post preview-->
+                        <div class="post-preview">
+                            <h2 class="post-title"><strong>Git Commit</strong></h2>
+                            <p>
+                                As we work, adding commits allows us to keep track of our progress and modifications.
+                                Each
+                                commit is treated
+                                as a "save point" by Git. It's a time in the project where you can go back and fix a bug
+                                or make
+                                a
+                                modification.
+                            </p>
+                            <p>
+                                We should always provide a message when we commit. It's easy for you (and others) to
+                                know what's
+                                changed and
+                                when by adding clear messages to each commit.
+                            </p>
+                            <p>
+                                <strong> Description about commit</strong>Create a new commit containing the current
+                                contents of
+                                the index
+                                and the given log message describing the changes. The new commit is a direct child of
+                                HEAD,
+                                usually the tip
+                                of the current branch, and the branch is updated to point to it.
+                                The content to be committed can be specified in several ways:
+                            </p>
+                            <p> •before using the commit command, use <strong>git-add .</strong> to incrementally "add"
+                                changes
+                                to the index
+                                (Note: even updated files must be "added")
+                            </p>
+                            <p> •before performing the commit command, by using <strong>git-rm</strong> to remove files
+                                from the
+                                working
+                                tree and index
+                            </p>
+                            <p> •by passing files as arguments to the commit command (without the —interactive or —patch
+                                options), which
+                                causes the commit to disregard changes staged in the index and instead record the
+                                current
+                                content of the
+                                listed files (which Git must already be aware of)
+                            </p>
+                            <p> •by using the -a switch with the commit command to automatically "add" changes from all
+                                known
+                                files and to
+                                automatically "rm" files in the index that have been deleted from the working tree,
+                                before
+                                actually
+                                committing
+                            </p>
+                            <p> •before concluding the transaction, by using the —interactive or —patch switches with
+                                the commit
+                                command to
+                                pick one by one which files or hunks should be included in the commit, in addition to
+                                contents
+                                in the index.
+                            </p>
+                            <p> The <strong>--dry-run</strong> option can be used to obtain a summary of what is
+                                included by any
+                                of the
+                                above for the next commit by giving the same set of parameters
+                            </p>
+                            <p>If you make a commit and then find a mistake immediately after that, you can recover from
+                                it with
+                                <strong>git
+                                    reset</strong>.</p>
+                            <p></p>
+                            <p></p>
+                        </div>
+                        <!-- Divider-->
+                        <hr class="my-4"/>
+                        <!-- Post preview-->
+                        <div class="post-preview">
+                            <h2 class="post-title"><strong>Merge</strong></h2>
+                            <p>
+                                The "merge" command is used to integrate changes from another branch. The target of this
+                                integration (i.e.
+                                the branch that receives changes) is always the currently checked out HEAD branch.
+                            </p>
+                            <p>
+                                While Git can perform most integrations automatically, some changes will result in
+                                conflicts
+                                that have to be
+                                solved by the user. The great part of Git's merging process is that it uses the familiar
+                                edit/stage/commit
+                                workflow to resolve merge conflicts. When you encounter a merge conflict, running the
+                                <strong>git
+                                    status</strong> command shows you which files need to be resolved.When Git
+                                encounters a conflict
+                                during a
+                                merge, It will edit the content of the affected files with visual indicators that mark
+                                both
+                                sides of the
+                                conflicted content. These visual markers are: <<<<<<<, =======, and >>>>>>>. Its helpful
+                                to
+                                search a project
+                                for these indicators during a merge to find where conflicts need to be
+                                resolved.Generally the
+                                content before
+                                the ======= marker is the receiving branch and the part after is the merging branch.
+                                <strong>Git merge</strong> will combine multiple sequences of commits into one unified
+                                history.
+                                In the most
+                                frequent use cases, git merge is used to combine two branches.
+                            </p>
+                            <p>
+                                <strong>Some important options of merge</strong>
+                            </p>
+                            <p>
+                                <strong>--no-ff</strong>Creates a merge commit even when a fast-forward would be
+                                possible.
+                            </p>
+                            <p><strong>--squash</strong>Combines all integrated changes into a single commit, instead of
+                                preserving them as
+                                individual commits.</p>
+                            <p><strong>--abort</strong>When a conflict occurs, this option can be used to abort the
+                                merge and
+                                restore the
+                                project's state as it was before starting the merge.
+                            </p>
+                            <p></p>
+                            <p></p>
+                        </div>
+                        <!-- Divider-->
+                        <hr class="my-4"/>
+                        <!-- Post preview-->
+                        <div class="post-preview">
+                            <h2 class="post-title"><strong>Tags</strong></h2>
+                            <p>Annotated tags can be created in GitHub Desktop. Tags are linked to commits, so you may
+                                use them
+                                to designate
+                                a specific point in your repository's history, such as a release's version number.</p>
+                            <p>By default, GitHub Desktop will push the tag that you create to your repository with the
+                                associated
+                                commit.</p>
+                            <p>Creating a tag:</p>
+                            <p>1.Click <strong>History</strong>.</p>
+                            <p>2.Right-click the commit and click <strong>Create Tag</strong>. provide the tag name</p>
+                            <p>3.Click <strong>Create Tag</strong> .</p>
+                            <p></p>
+                            <p>Viewing tags</p>
+                            <p>1. click on <strong>History</strong></p>
+                            <p>2. Click on Commit</p>
+                            <p>3. All tags connected with a commit are displayed in the metadata for that commit.</p>
+                        </div>
+                        <!-- Divider-->
+                        <hr class="my-4"/>
+
+                    </div>
+                </div>
+            </div>
+            <div class=" bluish row">
+                <h1>Docker</h1>
+            </div>
+
+            <div class="container px-4 px-lg-5">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-md-10 col-lg-8 col-xl-10">
+                        <!-- Post preview-->
+                        <div class="post-preview">
+                            <h2 class="post-title"><strong>Introduction</strong></h2>
+                            <p>Docker Engine is a containerization tool that you may use to develop and containerize
+                                your apps.
+                                Docker
+                                Engine is a client-server program that includes:
+                            </p>
+                            <p> • A server with a long-running daemon process <strong>dockerd</strong>.</p>
+                            <p> • APIs which specify interfaces that programs can use to talk to and instruct the Docker
+                                daemon.</p>
+                            <p> • A <strong>command line interface</strong> (CLI) client docker.</p>
+                            <p>Through scripting or direct CLI instructions, the CLI employs Docker APIs to control or
+                                communicate with the
+                                Docker daemon. The underlying API and CLI are used by many other Docker apps. Docker
+                                objects
+                                such as images,
+                                containers, networks, and volumes are created and managed by the daemon.
+                            </p>
+                            <p>Here we will discuss about
+                            </p>
+                            <p>
+                                • Containers
+                            </p>
+                            <p> • images
+                            </p>
+                            <p> • Docker Commands
+                            </p>
+                            <p> • commandline project
+                            </p>
+                            <p></p>
+                            <p></p>
+                        </div>
+                        <!-- Divider-->
+                        <hr class="my-3"/>
+                        <!-- Post preview-->
+                        <div class="post-preview">
+                            <h2 class="post-title"><strong>Containers</strong></h2>
+                            <p>A container is a standard software unit that encapsulates code and all of its
+                                dependencies so
+                                that the
+                                program can be moved from one computing environment to another fast and reliably. A
+                                Docker
+                                container image
+                                is a small, standalone software package that contains everything needed to run a
+                                program,
+                                including code,
+                                runtime, system tools, system libraries, and settings.</p>
+                            <p>At runtime, container images become containers, and when Docker containers run on Docker
+                                Engine,
+                                images
+                                become containers. Containerized software, which is available for both Linux and
+                                Windows-based
+                                applications,
+                                will always run the same independent of the infrastructure. Containers separate software
+                                from
+                                its
+                                surroundings and ensure that it performs consistently despite variances in development
+                                and
+                                staging
+                                environments, for example.
+                            </p>
+                            <p> Docker containers that run on Docker Engine:
+                            </p>
+                            <p> • <strong>Standard </strong>:Docker created the industry standard for containers, so
+                                they could
+                                be portable
+                                anywhere
+                            </p>
+                            <p> •<strong>Lightweight </strong>:Containers share the machine’s OS system kernel and
+                                therefore do
+                                not require
+                                an OS per application, driving higher server efficiencies and reducing server and
+                                licensing
+                                costs
+                            </p>
+                            <p> •<strong> Secure</strong>:Applications are safer in containers and Docker provides the
+                                strongest
+                                default
+                                isolation capabilities in the industry
+                            </p>
+                            <p></p>
+                            <p></p>
+                            <p>
+                        </div>
+                        <!-- Divider-->
+                        <hr class="my-3"/>
+                        <!-- Post preview-->
+                        <div class="post-preview">
+                            <h2 class="post-title"><strong>Docker Commands</strong></h2>
+                            <p> • <strong>docker –version</strong>:This command is used to get the currently installed
+                                version
+                                of docker
+                            </p>
+                            <p> • <strong>docker pull</strong>:This command is used to pull images from the docker
+                                repository(hub.docker.com)
+                            </p>
+                            <p> • <strong>docker run</strong>:This command is used to create a container from an image
+                            </p>
+                            <p> • <strong>docker ps</strong>:This command is used to list the running containers
+                            </p>
+                            <p> • <strong>docker ps -a</strong>:This command is used to show all the running and exited
+                                containers
+                            </p>
+                            <p> • <strong>docker exec</strong>:This command is used to access the running container
+                            </p>
+                            <p> • <strong>docker stop</strong>:This command stops a running container
+                            </p>
+                            <p> • <strong>docker kill</strong>:This command kills the container by immediately
+                                terminating its
+                                execution.
+                                The difference between 'docker kill' and 'docker stop' is that 'docker stop' allows the
+                                container to
+                                gracefully shut down, whereas 'docker kill' allows the container to be killed if it is
+                                taking
+                                too long to
+                                shut down.
+                            </p>
+                            <p> • <strong>docker commit</strong>:This command creates a new image of an edited container
+                                on the
+                                local system
+                            </p>
+                            <p> • <strong>docker login</strong>:This command is used to login to the docker hub
+                                repository</p>
+                            <p> • <strong>docker push</strong>:This command is used to push an image to the docker hub
+                                repository</p>
+                            <p> • <strong>docker images</strong>:This command lists all the locally stored docker images
+                            </p>
+                            <p> • <strong>docker rm</strong>:This command is used to delete a stopped container</p>
+                            <p> • <strong>docker build</strong>:This command is used to build an image from a specified
+                                docker
+                                file</p>
+                            <p></p>
+                            <p></p>
+                        </div>
+                        <!-- Divider-->
+                        <hr class="my-3"/>
+                        <!-- Pager-->
+                    </div>
+                </div>
+            </div>
+        </article>
+        <aside class="col-4 mb-3">
+            <h2>content</h2>
+            <ul>
+                <li>Python/Flask</li>
+                <ul>
+                    <li>What is Python?</li>
+                    <li>What is Pytest?</li>
+                    <li>What is Python Flask?</li>
+                    <li>Setting up Pytest on Flask</li>
+                    <li>project outline</li>
+                </ul>
+                <li>GITHUB</li>
+                <ul>
+                    <li>Introduction</li>
+                    <li>Repository</li>
+                    <li>Branch</li>
+                    <li>Git Commit</li>
+                    <li>Merge</li>
+                    <li>Tags</li>
+                </ul>
+                <li>Docker</li>
+                <ul>
+                    <li>Introduction</li>
+                    <li>Containers</li>
+                    <li>Docker Commands</li>
+                </ul>
+
+        </aside>
+    </div>
+{% endblock %}
+</article>
