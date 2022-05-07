@@ -1,6 +1,10 @@
 README.md
 setup.py
 app/__init__.py
+app/run.py
+app/cli/__init__.py
+app/db/__init__.py
+app/db/models/__init__.py
 app/config.py
 app/run.py
 app/auth/__init__.py
