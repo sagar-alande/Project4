@@ -7,4 +7,4 @@
 
 [![Development Workflow](https://github.com/sagar-alande/Project4/actions/workflows/dev.yml/badge.svg)](https://github.com/sagar-alande/Project4/actions/workflows/dev.yml)
 
-* [Developmental Deployment](https://sagar-project4-de.herokuapp.com//)
+* [Developmental Deployment](https://sagar-project4-dev.herokuapp.com//)
