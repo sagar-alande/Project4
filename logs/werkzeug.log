@@ -30,3 +30,6 @@
 2022-05-08 16:54:54,543 [INFO] werkzeug: 172.20.0.1 - - [08/May/2022 16:54:54] "GET /login HTTP/1.1" 200 -
 2022-05-08 16:54:58,381 [INFO] werkzeug: 172.20.0.1 - - [08/May/2022 16:54:58] "[32mPOST /login HTTP/1.1[0m" 302 -
 2022-05-08 16:54:58,401 [INFO] werkzeug: 172.20.0.1 - - [08/May/2022 16:54:58] "GET /dashboard HTTP/1.1" 200 -
+2022-05-08 18:11:23,989 [INFO] werkzeug:  * Detected change in '/home/myuser/app/db/models/__init__.py', reloading
+2022-05-08 18:13:41,678 [INFO] werkzeug: 172.20.0.1 - - [08/May/2022 18:13:41] "GET /dashboard HTTP/1.1" 200 -
+2022-05-08 18:15:37,212 [INFO] werkzeug:  * Detected change in '/home/myuser/app/transsactions/__init__.py', reloading
