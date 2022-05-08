@@ -10,3 +10,23 @@
 2022-05-06 23:41:21,159 [INFO] werkzeug: 172.20.0.1 - - [06/May/2022 23:41:21] "GET /login?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
 2022-05-06 23:41:21,263 [INFO] werkzeug: 172.20.0.1 - - [06/May/2022 23:41:21] "[36mGET /login?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
 2022-05-06 23:41:47,545 [INFO] werkzeug: 172.20.0.1 - - [06/May/2022 23:41:47] "GET / HTTP/1.1" 200 -
+2022-05-08 16:22:05,679 [INFO] werkzeug: 172.20.0.1 - - [08/May/2022 16:22:05] "GET / HTTP/1.1" 200 -
+2022-05-08 16:22:05,897 [INFO] werkzeug: 172.20.0.1 - - [08/May/2022 16:22:05] "GET / HTTP/1.1" 200 -
+2022-05-08 16:22:06,055 [INFO] werkzeug: 172.20.0.1 - - [08/May/2022 16:22:06] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2022-05-08 16:47:03,583 [INFO] werkzeug:  * Detected change in '/home/myuser/tests/click_test.py', reloading
+2022-05-08 16:52:37,191 [INFO] werkzeug: 172.20.0.1 - - [08/May/2022 16:52:37] "GET / HTTP/1.1" 200 -
+2022-05-08 16:52:42,764 [INFO] werkzeug: 172.20.0.1 - - [08/May/2022 16:52:42] "[32mPOST /login HTTP/1.1[0m" 302 -
+2022-05-08 16:52:42,777 [INFO] werkzeug: 172.20.0.1 - - [08/May/2022 16:52:42] "GET /login HTTP/1.1" 200 -
+2022-05-08 16:52:48,681 [INFO] werkzeug: 172.20.0.1 - - [08/May/2022 16:52:48] "[32mPOST /login HTTP/1.1[0m" 302 -
+2022-05-08 16:52:48,688 [INFO] werkzeug: 172.20.0.1 - - [08/May/2022 16:52:48] "GET /login HTTP/1.1" 200 -
+2022-05-08 16:52:51,749 [INFO] werkzeug: 172.20.0.1 - - [08/May/2022 16:52:51] "GET /register HTTP/1.1" 200 -
+2022-05-08 16:52:58,791 [INFO] werkzeug: 172.20.0.1 - - [08/May/2022 16:52:58] "[35m[1mPOST /register HTTP/1.1[0m" 500 -
+2022-05-08 16:52:58,801 [INFO] werkzeug: 172.20.0.1 - - [08/May/2022 16:52:58] "GET /register?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2022-05-08 16:52:58,802 [INFO] werkzeug: 172.20.0.1 - - [08/May/2022 16:52:58] "GET /register?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2022-05-08 16:52:58,807 [INFO] werkzeug: 172.20.0.1 - - [08/May/2022 16:52:58] "GET /register?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2022-05-08 16:52:58,873 [INFO] werkzeug: 172.20.0.1 - - [08/May/2022 16:52:58] "[36mGET /register?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2022-05-08 16:54:46,861 [INFO] werkzeug:  * Detected change in '/home/myuser/app/auth/__init__.py', reloading
+2022-05-08 16:54:54,457 [INFO] werkzeug: 172.20.0.1 - - [08/May/2022 16:54:54] "[32mPOST /register HTTP/1.1[0m" 302 -
+2022-05-08 16:54:54,543 [INFO] werkzeug: 172.20.0.1 - - [08/May/2022 16:54:54] "GET /login HTTP/1.1" 200 -
+2022-05-08 16:54:58,381 [INFO] werkzeug: 172.20.0.1 - - [08/May/2022 16:54:58] "[32mPOST /login HTTP/1.1[0m" 302 -
+2022-05-08 16:54:58,401 [INFO] werkzeug: 172.20.0.1 - - [08/May/2022 16:54:58] "GET /dashboard HTTP/1.1" 200 -
