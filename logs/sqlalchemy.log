@@ -144,3 +144,9 @@ CREATE TABLE transactions (
 2022-05-08 22:24:30,549 [INFO] sqlalchemy.engine.Engine: PRAGMA main.table_info("users")
 2022-05-08 22:24:30,549 [INFO] sqlalchemy.engine.Engine: [raw sql] ()
 2022-05-08 22:24:30,550 [INFO] sqlalchemy.engine.Engine: COMMIT
+2022-05-09 00:41:34,858 [INFO] sqlalchemy.engine.Engine: BEGIN (implicit)
+2022-05-09 00:41:34,859 [INFO] sqlalchemy.engine.Engine: PRAGMA main.table_info("transactions")
+2022-05-09 00:41:34,859 [INFO] sqlalchemy.engine.Engine: [raw sql] ()
+2022-05-09 00:41:34,861 [INFO] sqlalchemy.engine.Engine: PRAGMA main.table_info("users")
+2022-05-09 00:41:34,861 [INFO] sqlalchemy.engine.Engine: [raw sql] ()
+2022-05-09 00:41:34,862 [INFO] sqlalchemy.engine.Engine: COMMIT
