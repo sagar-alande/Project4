@@ -329,3 +329,4 @@
 2022-05-10 14:40:47,288 [INFO] werkzeug: 172.20.0.1 - - [10/May/2022 14:40:47] "[32mPOST /transactions/upload HTTP/1.1[0m" 302 -
 2022-05-10 14:40:47,333 [INFO] werkzeug: 172.20.0.1 - - [10/May/2022 14:40:47] "GET /transactions HTTP/1.1" 200 -
 2022-05-10 14:40:57,182 [INFO] werkzeug: 172.20.0.1 - - [10/May/2022 14:40:57] "GET /dashboard HTTP/1.1" 200 -
+2022-05-10 14:57:35,686 [INFO] werkzeug:  * Detected change in '/home/myuser/tests/file_test.py', reloading
