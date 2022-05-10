@@ -2,7 +2,12 @@
 {% block content %}
     {% from 'bootstrap5/form.html' import render_form, render_field, render_form_row %}
     <div id="row">
+    <div id ="col-3">
     <h2>Dashboard</h2>
     <p>Welcome: {{ current_user.email }}</p>
+    </div>
+    <div id ="col-4">
+        Your balance: {{ data or 0}}
+    </div>
     </div>
 {% endblock %}

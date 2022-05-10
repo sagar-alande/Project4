@@ -7,6 +7,9 @@ from werkzeug.security import generate_password_hash
 from app.auth.forms import login_form, register_form, profile_form, security_form, user_edit_form
 from app.db import db
 from app.db.models import User
+from app.db.models import Transaction
+from sqlalchemy import  func
+import sqlalchemy as db1
 
 auth = Blueprint('auth', __name__, template_folder='templates')
 from flask import current_app
@@ -42,7 +45,7 @@ def register():
     if form.validate_on_submit():
         user = User.query.filter_by(email=form.email.data).first()
         if user is None:
-            user = User(email=form.email.data, password=generate_password_hash(form.password.data))
+            user = User(email=form.email.data, password=generate_password_hash(form.password.data), is_admin= False)
             db.session.add(user)
             db.session.commit()
             user = User.query.filter_by(email=form.email.data).first()
@@ -57,10 +60,13 @@ def register():
     return render_template('register.html', form=form)
 
 
-@auth.route('/dashboard')
+@auth.route('/dashboard', methods=['GET', 'POST'])
 @login_required
 def dashboard():
-    return render_template('dashboard.html')
+    #balance = Transaction.query.get(current_user.get_id())
+    #total_bal= sum([Transaction.amount]).where(Transaction.current_user.get_id())
+    total_bal= db.session.query(func.sum(Transaction.amount)).filter(Transaction.user_id == current_user.get_id()).scalar()
+    return render_template('dashboard.html', data = total_bal)
 
 
 @auth.route("/logout")
