@@ -10,12 +10,13 @@ from app.db.models import User
 from app.db.models import Transaction
 from sqlalchemy import  func
 import sqlalchemy as db1
+import logging
 
 auth = Blueprint('auth', __name__, template_folder='templates')
 from flask import current_app
 
 
-
+log = logging.getLogger("myApp")
 
 @auth.route('/login', methods=['POST', 'GET'])
 def login():
@@ -54,9 +55,11 @@ def register():
                 db.session.commit()
             flash('Congratulations, you are now a registered user!', "success")
             return redirect(url_for('auth.login'), 302)
+            log.info(user, "added")
         else:
             flash('Already Registered')
             return redirect(url_for('auth.login'), 302)
+            log.info(user, "added")
     return render_template('register.html', form=form)
 
 
@@ -78,6 +81,7 @@ def logout():
     db.session.add(user)
     db.session.commit()
     logout_user()
+    log.info(user, "logged out")
     return redirect(url_for('auth.login'))
 
 
@@ -101,6 +105,7 @@ def browse_users():
 @login_required
 def retrieve_user(user_id):
     user = User.query.get(user_id)
+    log.info(user_id, "was searched")
     return render_template('profile_view.html', user=user)
 
 
@@ -115,6 +120,7 @@ def edit_user(user_id):
         db.session.add(user)
         db.session.commit()
         flash('User Edited Successfully', 'success')
+        log.info(user_id, "edited the user information")
         return redirect(url_for('auth.browse_users'))
     return render_template('user_edit.html', form=form)
 
@@ -130,9 +136,11 @@ def add_user():
             db.session.add(user)
             db.session.commit()
             flash('Congratulations, you just created a user', 'success')
+            log.info(user, "added successfully")
             return redirect(url_for('auth.browse_users'))
         else:
             flash('Already Registered')
+            log.error(user, "tried duplicating the user")
             return redirect(url_for('auth.browse_users'))
     return render_template('user_new.html', form=form)
 
@@ -143,6 +151,7 @@ def delete_user(user_id):
     user = User.query.get(user_id)
     if user.id == current_user.id:
         flash("You can't delete yourself!")
+        log.info(user_id, "tried to delete own user details")
         return redirect(url_for('auth.browse_users'), 302)
     db.session.delete(user)
     db.session.commit()
@@ -159,6 +168,7 @@ def edit_profile():
         db.session.add(current_user)
         db.session.commit()
         flash('You Successfully Updated your Profile', 'success')
+        log.info(user, "Updated the profile successfully")
         return redirect(url_for('auth.dashboard'))
     return render_template('profile_edit.html', form=form)
 
@@ -173,6 +183,7 @@ def edit_account():
         db.session.add(current_user)
         db.session.commit()
         flash('You Successfully Updated your Password or Email', 'success')
+        log.info(user, "updated password or email")
         return redirect(url_for('auth.dashboard'))
     return render_template('manage_account.html', form=form)
 

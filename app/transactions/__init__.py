@@ -12,6 +12,8 @@ from werkzeug.utils import secure_filename, redirect
 
 transactions = Blueprint('transactions', __name__,
                          template_folder='templates')
+log = logging.getLogger("myApp")
+e_log = logging.getLogger("error")
 
 
 @transactions.route('/transactions', methods=['GET'], defaults={"page": 1})
@@ -21,10 +23,12 @@ def transactions_browse(page):
     per_page = 1000
     pagination = Transaction.query.paginate(page, per_page, error_out=False)
     data = pagination.items
+    log.info("user browsed the transaction from", page)
     try:
         return render_template('browse_transacts.html', data=data, pagination=pagination)
     except TemplateNotFound:
         abort(404)
+        log.error("Browse template not found")
 
 
 @transactions.route('/transactions/upload', methods=['POST', 'GET'])
@@ -55,8 +59,10 @@ def transaction_upload():
                     current_user.transactions.append(Transaction(row[0], row[1]))
                     db.session.commit()
         return redirect(url_for('transactions.transactions_browse'))
+        log.info("transactions uploaded by user")
 
     try:
         return render_template('upload.html', form=form)
     except TemplateNotFound:
         abort(404)
+        e_log.error("template not found")
